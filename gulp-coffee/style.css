@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --gulp-primary: #000000;
+    --gulp-secondary: #ffffff;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#gulp-logo {
+  width: 4rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--gulp-secondary);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 6rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.menu-item {
+  margin-top: 3rem;
+  color: #0000008f;
+  cursor: pointer;
+}
+
+#login-text {
+  margin-left: 20rem;
+}
+
+.member-item {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  color: #0000008f;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: var(--gulp-primary);
+}
+
+.member-item:hover {
+  color: var(--gulp-primary);
+}
+
+.active {
+  color: var(--gulp-primary);
+}
+
+#shop-cart {
+  width: 2rem;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  background-color: var(--gulp-secondary);
+}
+
+.column-one {
+  width: 40%;
+}
+
+.column-two {
+  width: 40%;
+  padding-left: 3rem;
+  color: var(--gulp-primary);
+  padding-top: 2rem;
+}
+
+#coffee-row{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  background-color: var(--gulp-secondary);
+  height: 100%;
+}
+
+.coffee-btn {
+  margin-bottom: 4rem;
+}
+
+#coffee-img {
+  width: 100%;
+  height: 40vh;
+}
+
+.flex-container-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--gulp-primary);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-container {
+  color: var(--gulp-secondary);
+  width: 20%;
+}
+
+.bean-info {
+  border-bottom: 1px solid var(--gulp-secondary);
+  margin-bottom: 1rem;
+}
+
+.parallax {
+  background-image: url("/images/coffee-parallax.jpg");
+  height: 95vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--gulp-secondary);
+}
+
+.parallax-text {
+  padding-left: 25rem;
+  width: 100%;
+  justify-content: center;
+  text-shadow: 1px 1px var(--gulp-primary);
+  padding-top: 4rem;
+}
+
+.parallax-text h3, .parallax-text h2 {
+  font-weight: 700;
+}
+.parallax-text h3 {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: .5rem;
+  font-size: 1.5rem;
+}
+
+.parallax-text h2 {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
+.parallax-text p {
+  width: 70%;
+  letter-spacing: .2rem;
+  line-height: 1.5rem;
+}
+
+.signup {
+  background-image: url("/images/coffee_cup.jpg");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--gulp-secondary);
+  border: 1px solid var(--gulp-primary);
+  opacity: 0.95;
+}
+
+.signup-text {
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px var(--gulp-primary);
+  padding-top: 15rem;
+}
+
+.signup-text h2 {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+#buy-btn {
+  background-color: var(--gulp-secondary);
+  color: var(--gulp-primary);
+  font-size: 1rem;
+  border: 2px solid var(--gulp-primary);
+  padding: .5rem 2rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+#roast {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-p {
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#submit {
+  background-color: var(--gulp-secondary);
+  color: var(--gulp-primary);
+  font-size: 1rem;
+  border: 2px solid var(--gulp-secondary);
+  padding: .5rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+#form-email {
+  background-color: var(--gulp-secondary);
+  color: var(--gulp-primary);
+  font-size: 1rem;
+  border: 2px solid var(--gulp-secondary);
+  padding: .5rem 2rem;
+  font-weight: 700;
+  outline: none;
+}
