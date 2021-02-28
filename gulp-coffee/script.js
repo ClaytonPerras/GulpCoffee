@@ -1,14 +1,6 @@
-const menuItem = document.querySelectorAll('.menu-item');
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-function removeActiveClasses() {
-    menuItem.forEach(item => {
-        item.classList.remove('active');
-    });
-}
-
-menuItem.forEach(item => {
-    item.addEventListener('click', () => {
-        removeActiveClasses();
-        item.classList.add('active');
-    });
-});
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
