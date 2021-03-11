@@ -315,3 +315,29 @@ a {
       display: flex;
   }
 }
+
+.flex-container-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--gulp-primary);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer-container {
+  color: var(--gulp-secondary);
+  width: 20%;
+}
+
+.footer-info {
+  border-bottom: 1px solid var(--gulp-secondary);
+  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+}
+
+.quick-links {
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
