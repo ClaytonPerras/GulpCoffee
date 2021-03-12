@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">Gulp Coffee</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coffee.html">Shop</a></li>
+            <li><a href="form.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="contact-box">
+          <div class="left"></div>
+          <div class="right">
+            <div id="error"></div>
+            <h2>Contact Us</h2>
+            <form action="#" method="GET" class="contact-form" novalidate>
+              <span class="name-error"></span>
+              <input type="text" class="field" id="name" placeholder="Your Name*" required>
+              <span class="email-error"></span>
+              <input type="email" class="field" id="email" placeholder="Your Email*" required>
+              <input type="tel" class="field" id="phone" placeholder="Phone">
+              <textarea placeholder="Message" class="field" id="message"></textarea>
+              <button type="submit" class="btn" id="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="flex-container-footer">
+        <div class="footer-container">
+            <h3 class="footer-info">Quick Links</h3>
+            <a href=""><p class="quick-links">FAQ</p></a>
+            <a href=""><p class="quick-links">Shipping + Returns</p></a>
+            <a href=""><p class="quick-links">In-store Perks</p></a>
+            <a href=""><p class="quick-links">Contact Us</p></a>
+        </div>
+        <div class="footer-container">
+            <h3 class="footer-info">About Us</h3>
+            <a href=""></href><p class="quick-links">Our Mission</p></a>
+            <a href=""></href><p class="quick-links">Careers</p></a>
+            <a href=""></href><p class="quick-links">Collaborations</p></a>
+            <a href=""></href><p class="quick-links">Blog</p></a>
+        </div>
+        <div class="footer-container">
+            <h3 class="footer-info">Shopping</h3>
+            <a href=""></href><p class="quick-links">New Beans</p></a>
+            <a href=""></href><p class="quick-links">Merchandise</p></a>
+            <a href=""></href><p class="quick-links">Sale</p></a>
+            <a href=""></href><p class="quick-links">Gift Cards</p></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/gulp-coffee/script.js"></script>
+    <script type="text/javascript" src="/gulp-coffee/form.js"></script>
+</body>
+</html>

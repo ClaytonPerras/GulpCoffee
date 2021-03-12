@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --gulp-primary: #131313;
+    --gulp-secondary: #ffffff;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+#gulp-logo {
+  width: 4rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--gulp-secondary);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.member-item:hover {
+  color: var(--gulp-primary);
+}
+
+.active {
+  color: var(--gulp-primary);
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gulp-primary);
+    color: white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+  .brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .navbar-links {
+    height: 100%;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .navbar-links li:hover {
+    background-color: #555;
+  }
+
+  .container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-box{
+	max-width: 80%;
+    height: 80vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("/gulp-coffee/images/coffee_cup.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #3f96cd;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+    transition: .3s;
+    border-radius: 1rem;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+    resize: none;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #3f96cd;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+    transition: .3s;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: #3f96cd;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+input:focus:invalid:required {
+	border: 1px solid red;
+  }
+
+  .email-error, .name-error {
+	font-size: 80%;
+	color: rgb(247, 103, 103);
+	text-align: center;
+	justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .flex-container-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--gulp-primary);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .footer-container {
+    color: var(--gulp-secondary);
+    width: 20%;
+  }
+  
+  .footer-info {
+    border-bottom: 1px solid var(--gulp-secondary);
+    margin-bottom: 1rem;
+    letter-spacing: .1rem;
+  }
+  
+  .quick-links {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+  }
+
+  @media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+        text-align: center;
+    }
+  
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }
